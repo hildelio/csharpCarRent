@@ -1,3 +1,5 @@
+using RentCars.Types;
+
 namespace RentCars.Models;
 
 public abstract class Person
@@ -7,7 +9,7 @@ public abstract class Person
     public string? Email { get; set; }
     public string? Address { get; set; }
     public string? Contact { get; set; }
-
+    public PersonType PersonType { get; set; }
     public virtual string SendEmail()
     {
         return $"Sendind email to {this.Email}.";

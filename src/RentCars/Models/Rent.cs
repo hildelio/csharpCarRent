@@ -13,8 +13,6 @@ public class Rent
     //10 - Crie o construtor de `Rent` seguindo as regras de negócio
     public Rent(Vehicle vehicle, Person person, int daysRented)
     {
-        Vehicle = vehicle;
-        Person = person;
         DaysRented = daysRented;
 
         if (person.PersonType == PersonType.Physical)
@@ -27,18 +25,39 @@ public class Rent
         }
         Status = RentStatus.Confirmed;
         vehicle.IsRented = true;
+        Vehicle = vehicle;
         person.Debit += Price;
+        Person = person;
     }
 
     //11 - Implemente os métodos de `cancelar` e `finalizar` um aluguel
     public void Cancel()
     {
-        throw new NotImplementedException();
+        if (Status == RentStatus.Confirmed)
+        {
+            Status = RentStatus.Canceled;
+            Vehicle.IsRented = false;
+            Person.Debit -= Price;
+            Console.WriteLine("Aluguel cancelado com sucesso!");
+        }
+        else
+        {
+            Console.WriteLine("Não é possível cancelar um aluguel inexistente.");
+        }
     }
 
     //11 - Implemente os métodos de `cancelar` e `finalizar` um aluguel
     public void Finish()
     {
-        throw new NotImplementedException();
+        if (Status == RentStatus.Confirmed)
+        {
+            Status = RentStatus.Finished;
+            Vehicle.IsRented = false;
+            Console.WriteLine("Aluguel finalizado com sucesso!");
+        }
+        else
+        {
+            Console.WriteLine("Não é possível cancelar um aluguel inexistente.");
+        }
     }
 }

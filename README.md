@@ -1,13 +1,24 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto - Aluguel de Carros
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## O que vamos fazer?
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Resolver problemas da mobilidade urbana. Nesse projeto, você vai criar uma aplicação para controlar locação de veículos.
+
+## Por que isso é importante?
+
+Este é o momento que você irá consolidar todos os ensinamentos adquiridos até aqui. Você trabalhará com programação orientada a objetos incluindo instância de objetos, programação de classes, implementação de métodos e tipos avançados.
+
+## Especificação
+
+### O que foi estudado neste repositório?
+
+- Entendimento generalizado de programação orientada a objetos
+- Desenvolvimento de classes
+- Instância de objetos e utilização correta das classes
+- Utilização de tipos avançados
+
+### O que devo desenvolver?
+
+Você deverá construir uma aplicação do tipo Console com a capacidade de realizar diversas operações básicas de um sistema de aluguel de carros. Essa aplicação controlará diversos tipos de veículos, status de locações além dos processos de locar um veículo ou cancelar uma locação.
+
+
